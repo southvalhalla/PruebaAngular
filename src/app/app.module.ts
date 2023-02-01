@@ -6,10 +6,11 @@ import { EmpleadosComponent } from './components/empleados/empleados.componet';
 import { EmpleadoComponent } from './components/empleado/empleado.component';
 import { ContadorComponent } from './components/contador/contador.component';
 import { BotonesComponent } from './botones/botones.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
-    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent
+    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent, FormularioComponent
   ],
   imports: [
     BrowserModule
