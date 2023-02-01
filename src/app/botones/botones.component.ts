@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./botones.component.css']
 })
 export class BotonesComponent {
-  text_color:string = "";
+  // text_color:string = "";
 
-  button_disabled:boolean = false;
+  // button_disabled:boolean = false;
+
+  src: string = "https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1"
 }

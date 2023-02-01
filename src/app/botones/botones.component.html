@@ -1,16 +1,17 @@
-<hr>
+<!-- <hr>
 <div>
-    <button [ngClass]="{
-        'disabled' : button_disabled,
-        'btn' : true,
-        'btn-danger' : true
-    }" class="mx-2" (click)="text_color = 'text-danger'">Color Rojo</button>
-    <button [class.disabled]="button_disabled" class="btn btn-success mx-2" (click)="text_color = 'text-success'">Color Verde</button>
-    <button [class.disabled]="button_disabled" class="btn btn-primary mx-2" (click)="text_color = 'text-primary'">Color Azul</button>
+    <button  [disabled]="button_disabled" class="btn btn-danger mx-2" (click)="text_color = 'text-danger'">Color Rojo</button>
+    <button  [disabled]="button_disabled" class="btn btn-success mx-2" (click)="text_color = 'text-success'">Color Verde</button>
+    <button  [disabled]="button_disabled" class="btn btn-primary mx-2" (click)="text_color = 'text-primary'">Color Azul</button>
 </div>
 
 <h1 [class]="text_color">Texto a cambiar de COLOR</h1>
 
 <button class="btn btn-secondary" (click)="button_disabled = !button_disabled">
     Activar/Desactivar
-</button>
+</button> -->
+
+<button class="btn btn-primary" (click)="src = 'https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-'">imagen 1</button>
+<button class="btn btn-danger" (click)="src = 'https://imagenes.elpais.com/resizer/tWk0KZYQ-JXiyRFFb5EZMHrBeZc=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/ZZ4XQLZXJ4PEMM4PTAK4TWKYFU.jpg'">imagen 2</button>
+<br>
+<img [src]="src" alt="">
