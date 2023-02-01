@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Persona } from '../interfaces/persona';
+import { Persona } from 'src/app/interfaces/persona';
 
 @Component({
   selector: 'app-empleado',

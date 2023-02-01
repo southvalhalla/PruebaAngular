@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { EmpleadosComponent } from './empleados/empleados.componet';
-import { EmpleadoComponent } from './empleado/empleado.component';
+import { EmpleadosComponent } from './components/empleados/empleados.componet'; 
+import { EmpleadoComponent } from './components/empleado/empleado.component';
+import { ContadorComponent } from './components/contador/contador.component';
 
 @NgModule({
   declarations: [
-    AppComponent,EmpleadosComponent, EmpleadoComponent
+    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent
   ],
   imports: [
     BrowserModule
