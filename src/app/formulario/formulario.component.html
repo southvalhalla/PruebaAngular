@@ -1,3 +1,13 @@
 <input type="text" placeholder="Ingresar nombre" #name> <!-- variable de plantilla  -->
 <br>
 <button class="btn btn-primary mt-2" (click)="mostrarEnConsola(name.value)">Mostrar en consola</button>
+<div class="alert alert-primary mt-5" *ngIf="openAlert; else mensaje">
+    <button class="btn btn-danger" (click)="openAlert = false">X</button>
+    Se ha enviado el mensaje
+</div>
+
+<ng-template #mensaje>
+    <div class="alert alert-danger mt-5">
+        Puebaa
+    </div>
+</ng-template>
