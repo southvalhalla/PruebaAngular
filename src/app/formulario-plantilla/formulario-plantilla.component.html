@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="card-body">
+        <form (ngSubmit)="procesar()" #formulario="ngForm">
+
+            <div>
+                <label class="form-label">
+                    Nombre:
+                </label>
+                <input type="text" name="nombre" class="form-control w-25 p-1" placeholder="Ingrese un nombre" [(ngModel)]="persona.nombre" required #name="ngModel">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+                Ingrese un nombre
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Apellido:
+                </label>
+                <input type="text" name="apellido" class="form-control w-25 p-1" placeholder="Ingrese un apellido" [(ngModel)]="persona.apellido" required #lastname="ngModel">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="lastname.valid || lastname.pristine">
+                Ingrese un apellido
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Edad:
+                </label>
+                <input type="text" name="edad" class="form-control w-25 p-1" placeholder="Ingrese la edad" [(ngModel)]="persona.edad" required #age="ngModel">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="age.valid || age.pristine">
+                Ingrese una edad
+            </div>
+            <div>
+                <label class="form-label">
+                    Edad:
+                </label>
+                <input type="text" name="casa" class="form-control w-25 p-1" placeholder="Ingrese la edad" [(ngModel)]="persona.casa">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="age.valid || age.pristine">
+                Ingrese una casa
+            </div>
+
+            <button class="btn btn-primary mt-2" [disabled]=" name.invalid || lastname.invalid || age.invalid">
+                Enviar
+            </button>
+            <button class="btn btn-danger mt-2" [disabled]="formulario.invalid">
+                Enviar
+            </button>
+        </form>
+    </div>
+</div>
+<!-- {{persona | json}} -->
+
+{{name.errors | json}}
+<hr>
+{{name.valid}}
