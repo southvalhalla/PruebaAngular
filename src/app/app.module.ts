@@ -10,14 +10,15 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { SwitchComponent } from './switch/switch.component';
 import { FormularioPlantillaComponent } from './formulario-plantilla/formulario-plantilla.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
 
 @NgModule({
   declarations: [
-    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent, FormularioComponent, SwitchComponent, FormularioPlantillaComponent
+    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent, FormularioComponent, SwitchComponent, FormularioPlantillaComponent, FormularioReactivoComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
