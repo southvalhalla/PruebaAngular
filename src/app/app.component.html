@@ -7,20 +7,11 @@
   <title>{{title}}</title>
 </head>
 <body class="m-4">
-  <h2>Componente padre</h2>
-  <p>{{title}}</p>
-  <!-- <p>{{bye}} Yo.</p> -->
-  <!-- <app-empleados></app-empleados> -->
-  <!-- <app-contador></app-contador> -->
-  <!-- <app-botones></app-botones> -->
-  <input type="text" class="form-control" [(ngModel)]="title">
-  <hr>
-  <app-children [(title)]="title"></app-children>
+  <h2>Servicios</h2>
+
+  <app-add-message></app-add-message>
+  
+  <app-list-message></app-list-message>
+  
 </body>
 </html>
-
-<!-- 
-  ! title="{{title}}" == [title]="title"
-
-  * [(title)]="title" == [title]="title" (titleChange)="title = $event"
--->
