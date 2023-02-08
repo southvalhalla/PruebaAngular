@@ -12,6 +12,11 @@
   <!-- <app-empleados></app-empleados> -->
   <!-- <app-contador></app-contador> -->
   <!-- <app-botones></app-botones> -->
-  <app-formulario-reactivo></app-formulario-reactivo>
+  <input type="text" class="form-control" [(ngModel)]="title">
+  <app-children [title]="title"></app-children>
 </body>
 </html>
+
+<!-- 
+  title="{{title}}" == [title]="title"
+-->

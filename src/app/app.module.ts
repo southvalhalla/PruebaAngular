@@ -12,10 +12,11 @@ import { FormularioPlantillaComponent } from './formulario-plantilla/formulario-
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
+import { ChildrenComponent } from './children/children.component';
 
 @NgModule({
   declarations: [
-    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent, FormularioComponent, SwitchComponent, FormularioPlantillaComponent, FormularioReactivoComponent
+    AppComponent,EmpleadosComponent, EmpleadoComponent, ContadorComponent, BotonesComponent, FormularioComponent, SwitchComponent, FormularioPlantillaComponent, FormularioReactivoComponent, ChildrenComponent
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule
